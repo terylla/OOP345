@@ -1,0 +1,22 @@
+// Name: Tran (Teryl) La
+// Seneca Student ID: 150353175
+// Seneca email: ntla1@myseneca.ca
+// Date of completion: February 2nd, 2020
+
+WORKSHOP 3 REFLECTION
+
+1/ The reason for specializing the `sum()` member function:
+	We use function template when we need to use the same algorithm for several types. But in this case, we need the the type for sum() to specifically be string, hence why we need to specialize it.
+
+2/ the reason for specializing the initial value for a summation.
+	We can?t initizlize variables with type ?template?, so we need to initialize them to a specific type in order to be able to initialize them. Also, specifying them like this to match the types of the summation function too.
+
+3/ the reason for defining the class variable outside the class definition.
+	We should always only have one definitionfor each static object. Class definitions in header files maybe #included in multiple source(.cpp) files, so if the class variables are defined within that same header file in the same class, then we would have multiple definition in different source files. This is why we should define the variable somewhre outside its class definition. 
+
+This workshop, again, was very ambiguous. It was really difficult trying to understsand what the professor was exepecting us to do?I had to communicate with many different classmates to understand what?s going on. Maybe clearer instruction or hints/tips would be nice (like OOP244).
+
+QUIZ RELECTION
+
+No mistakes
+	

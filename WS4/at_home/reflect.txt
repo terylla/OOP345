@@ -1,0 +1,19 @@
+// Name: Tran (Teryl) La
+// Seneca Student ID: 150353175
+// Seneca email: ntla1@myseneca.ca
+// Date of completion: February 9th, 2020
+
+WORKSHOP 4 REFLECTION
+
+Composition implementation is pretty simple and straight forward: copy constructor and assignment constructor, as well as move constructor and move assignment! One class depends on the other, hence why lots of allocation and deallocation must be implemented to ensure things are being copied properly without leak.
+As for aggregation, because the class does not have to destroy nor create the object that it uses, allocation and deallocation isn't strict on its part. As in, confirmations can NOT exist while reservation exists due to the restaurant existing, the relationship is like this:
+Restaurant CREATES reservation. Confirmations EXISTS because of reservations. Reservations does not create confirmation and vice versa, but confirmation only exists because of reservation. Another way to understand this is, confirmation does not need to exist because reservation exists. Confirmation is just an extra step for restaurant to double check its reservation.
+
+There was a lot of reviewing on pointers in this assignment. Again, there was a lot of confusion because of the minimal instruction. Code comparisons had to be done in order for the assignment to be complete, because there were complete blockages from understanding what we are supposed to do. Reading the instruction 3 times helps but it is not sufficient. It is a lot of self-learning, so I wonder how I can get the help I need from my program professors if all of us are stuck.
+
+Copy and assignment and move constructors were quite straight forward. They are pretty much the same for both ConfirmationSenders module and Restaurant module. The difference was that the Restaurant ones only depend on the one constructor provided, while the ConfirmationSenders ones depend on operator+= and operator-=. The provided constructor from the instruction really threw me off. The notes on OOP345 wasn't enough to learn so there was countless hours of googling.
+
+QUIZ 3 RELECTION
+
+Answer provided in WS3 reflection - no mistake
+	

@@ -1,0 +1,14 @@
+In line number 31 of your output:
+The output should be:
+      Tools: hammer, jigsaw
+                     ^
+But your output is: 
+      Tools: hammer, , jigsaw
+                     ^
+
+Unmatched character details:
+The character in column 22 is supposed to be:
+  [j] ASCII code(106)
+but you printed
+  [,] ASCII code(44)
+
