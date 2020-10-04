@@ -1,0 +1,35 @@
+// Name: Tran (Teryl) La
+// Seneca Student ID: 150353175
+// Seneca email: ntla1@myseneca.ca
+// Date of completion: March 31, 2020
+
+/* WORKSHOP 9 REFELCTION */
+
+1/ Why use binary and how did you use them?
+I assume that we are using binary so the program reads the files as "bytes" in order to be able to secure them as bytes and not int, not char, not anything else. 
+We opened the files to read and write as binary in this workshop, specifically in backup() and restore()
+
+2/ Using std::bind
+std::bind was used in this workshop like this:
+	//
+	std::thread t1(std::bind(converter, text, key, nbytes, Cryptor()));
+	//
+We used std::bind in this case to use 'converter' as our function parameter for t1, and the rest as parameters for t1 (for 'converter' to use). 
+The useful functionality of std::bind is that apart from 'converter' that works as a function in the code above, the rest of the parameters are able to be alternated.
+
+3/ Advantages of using multiple threads, and how was it used in this WS?
+It was used in this workshop as part of the encrypting/decrypting codes:
+	//
+	std::thread t1(std::bind(converter, text, key, nbytes, Cryptor()));
+	std::thread t2(std::bind(converter, text, key, nbytes, Cryptor()));
+	
+	t1.join();
+	t2.join();
+	//
+Multiple-threading allows the CPU to run multiple separate tasks at the same time so it allows us to maximize the workability of the computer as well as to save time because multi-threading ensures us that tasks are being run simultaneously.
+
+There was memory leak in restore() because 'text' wasn't deallocated after backup(), so I deallocated before opening the file and it worked. This was not done in in_lab because I forgot to check for memory leak.
+
+
+// 
+...Overall, this workshop was really easy compared to WS7 and previous from that. WS8 and WS9 were pretty simple, but quite confusing at the same time because they are too simple. I'll need to read more into this as multi-threading also invovles vector and lambda. 

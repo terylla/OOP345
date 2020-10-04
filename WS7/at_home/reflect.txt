@@ -1,0 +1,45 @@
+// Name: Tran (Teryl) La
+// Seneca Student ID: 150353175
+// Seneca email: ntla1@myseneca.ca
+// Date of completion: March 16th, 2020
+
+WORKSHOP 7 REFLECTION
+
+1) I used std::for_each quite often because it's really convenient to apply the lambda to iterate all of the elements in Song to achieve what I need. Such as in cleanAlbum(), I iterated over all albums within Song, then check which album is "[None]" with a simple if condition to change it to the desired output. 
+ std::accumulate was also used in display to accumlate the values within Song to the lambda then add to song length.
+std::find_if in inCollection() for it is a bool function. It searches through every elemenet within the range specified until it finds the artist, then return true
+std::count_if to return the number of elements within the range when the parameter matches the collection.
+std::copy_if to copy the range of elements specified to the collection if the parameter matches. 
+I also used std::sort simply to sort the elements I am iterating over within Song.
+
+2) I find STL algorithms REALLY complicated at first, but after getting used to it, I find it less confusing than for loop. I have a harder time understanding for loops than algorithm. I understand algorithm more as: here is the range you must iterate over, once you iterate over them then deal with them depending on what the STL function is. 
+
+The hardest part of this workshop is as always, trying to figure out what to do with minimal instruction. I got help from other classmates. Trying to understand how STL functions work took a bit of work too.
+
+QUIZ 5 RELECTION
+
+INCORRECT: 
+Purpose of <string_view> 
+CORRECT ANSWER:
+It allows us to manipulate the view of the string. It is a "string reference" and help programmer avoid copying data that is belonged to someone else.
+
+QUIZ 6 REFLECTION
+INCORRECT:
+1) For each case (a and b), name a Standard Template Library (STL) container that is optimized for adding and removing elements
+a) at the front and the back of a sequence: _____________________ 
+b) at random locations within a sequence: _____________________
+CORRECT ANSWER:
+a) deque/list
+b) list
+
+INCORRECT:
+Q2) The algorithm category of the STL consists of three distinct libraries. Name the three libraries? 
+CORRECT ANSWER:
+a) numeric
+b) functional
+c) algorithm
+
+INCORRECT
+3) Explain the effect of std::ios::binary on a file object.
+CORRECT ANSWER:
+It allows the stream to access the file as a binary. This allows stream to transfer data to and from memory without modification. Ot prevents information loss.

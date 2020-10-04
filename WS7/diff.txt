@@ -1,0 +1,14 @@
+In line number 19 of your output:
+The output should be:
+| Bird Set Free        | Sia             | This Is Acting       |   2016 | 4:12 | 1.21 |
+                                                                    ^
+But your output is: 
+| Bird Set Free        | Sia             | This Is Acting       |    252 | 0:00 | 1.21 |
+                                                                    ^
+
+Unmatched character details:
+The character in column 69 is supposed to be:
+  [2] ASCII code(50)
+but you printed
+  [Space] ASCII code(32)
+

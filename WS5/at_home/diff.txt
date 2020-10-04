@@ -1,0 +1,14 @@
+In line number 61 of your output:
+The output should be:
+EXCEPTION: Bad index [5]. Collection has [5] items.
+^
+But your output is: 
+terminate called after throwing an instance of 'std::out_of_range'
+^
+
+Unmatched character details:
+The character in column 1 is supposed to be:
+  [E] ASCII code(69)
+but you printed
+  [t] ASCII code(116)
+

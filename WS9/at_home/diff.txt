@@ -1,0 +1,14 @@
+In line number 19 of your output:
+The output should be:
+C++ is a general-purpose programming language created by 
+^
+But your output is: 
+==191911== Invalid read of size 1
+^
+
+Unmatched character details:
+The character in column 1 is supposed to be:
+  [C] ASCII code(67)
+but you printed
+  [=] ASCII code(61)
+

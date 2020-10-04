@@ -1,0 +1,43 @@
+// Name: Tran (Teryl) La
+// Seneca Student ID: 150353175
+// Seneca email: ntla1@myseneca.ca
+// Date of completion: March 19, 2020
+
+WORKSHOP 8 REFLECTION
+
+//The advantage that smart pointer syntax provides. Use example from your code to support your explanation.
+The most useful advantage of smart pointer is its own ability to manage the object(s) it owns. The programmer does not have to worry about deallocating the object(s). For example, unique_ptr was used to own the object within Utilities.cpp
+unique_ptr was used because we only need 1 owner for this object (a simple program). I did not have to manually deallocate the newly allocated Product when encapsulating the object. 
+Also, the advantage of using smart pointer is its's utilization of memory. For example, unique_ptr can NOT be copied, so moving it will save the use of extra memory. This also result in better management of memory used.
+
+
+//The difference between raw and smart pointer syntax in your solution.
+
+Utilities.cpp
+RAW POINTER:
+Product *newProduct = new Product(desc[i].desc, price[o].price);
+SMART POINTER:
+unique_ptr<Product> newProduct(new Product(desc[i].desc, price[o].price));
+
+List.h
+RAW POINTER:
+void operator+=(T* obj){
+	list.push_back(*obj);
+}
+SMART POINTER:
+void operator+=(std::unique_ptr<T> obj){ //don't use * here
+	list.push_back(*obj);
+}
+
+
+//CHALLENGES
+This workshop was really easy compared to the previous workshops. It's much shorter. 
+I had a little problem using throw for exception but it was fixed. I did not put std::string in front of the error message, resulting in "Unknown Error". I think that was what frustrated me most because I thought my code for the throw exception was correct the entire time.
+It was also a little confusing trying to figure out using += for smart pointer, turned out that I couldn't just copy it, I had to move it!
+
+Overall, this workshop was pretty nice. 
+
+//QUIZ REFLECTIONS
+None
+	
+
