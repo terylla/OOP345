@@ -1,8 +1,4 @@
-// Name: Tran (Teryl) La
-// Seneca Student ID: 150353175
-// Seneca email: ntla1@myseneca.ca
-// Date of completion: April 5th, 2020
-//
+
 // I confirm that I am the only author of this file
 //   and the content was created entirely by me.
 
